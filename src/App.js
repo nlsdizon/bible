@@ -1,4 +1,5 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'; 
+import './App.css';
 
 class App extends Component {
   constructor(props) {
@@ -34,20 +35,21 @@ class App extends Component {
     {
       return(
         <div>
-          <h1>VERSE OF THE DAY</h1>
-          
-          <div>
+        <div className="container">
+          <h1 className="title">VERSE OF THE DAY</h1>
+          <div className="verse">
             <p>{item.verse.details.text}</p>
           </div>
-          <div>
+          <div className="book">
             - {item.verse.details.reference}
           </div>
-          <div>
+          <div className="txt">
             <textarea name="" id="" cols="30" rows="10">how are you feeling today after reading this verse? enter it here and click save button to save into your own database</textarea>
           </div>
           <div>
             <button>SAVE</button>
           </div>
+        </div>
         </div>
         
       );
